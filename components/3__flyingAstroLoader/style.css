@@ -1,20 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
 body {
-  background-color: #152037;
+  /* background: linear-gradient(to bottom, #152037 0%, #222352 100%); */
+  /* background: #152037; */
+  background: #000;
   overflow: hidden;
 }
 
+/*--------- Text and countdown ---------*/
+
+.ETA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease all;
+  line-height: 1;
+}
+
 h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   color: white;
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
-  left: 50%;
   top: 58%;
-  margin-left: -20px;
+  transition: 0.3s ease all;
+  margin-bottom: 50px;
 }
+
+/*--------- Text and countdown ---------*/
+
 
 .body {
   position: absolute;
@@ -264,16 +284,19 @@ h1 {
   height: 120px;
   transform: translate(-50%, -50%);
   position: absolute;
+  opacity: 0.95;
+  z-index: -1;
+  display: none;
 
-  -webkit-animation: movingclouds 10s linear infinite;
-	-moz-animation: movingclouds 10s linear infinite;
-	-o-animation: movingclouds 10s linear infinite;
+  animation: movingclouds 5s linear infinite;
+	/* -moz-animation: movingclouds 20s linear infinite;
+	-o-animation: movingclouds 20s linear infinite; */
 }
 
 @keyframes movingclouds {
-	0% {margin-left: 0%;}
-	100% {margin-left: -100%;}
-  to {margin-left:-90%;}
+	0% {margin-left: 100%;}
+	100% {margin-left: -50%;}
+  to {margin-left:-100%;}
 }
 
 .cloud .circle {
@@ -324,4 +347,40 @@ h1 {
 .cloud4 {
   top: 72%;
   left: 80%;
+}
+
+.cloud5 {
+  top: 50%;
+  left: 20%;
+  animation-delay: 2.5s;
+
+}
+
+.cloud6 {
+  top: 10%;
+  left: 25%;
+  animation-delay: 2.5s;
+}
+
+.cloud7 {
+  top: 28%;
+  left: 70%;
+  animation-delay: 2.5s;
+}
+
+.cloud8 {
+  top: 72%;
+  left: 80%;
+  animation-delay: 2.5s;
+}
+
+.cloud2 .circle,
+.cloud2 .bar,
+.cloud4 .circle,
+.cloud4 .bar,
+.cloud8 .circle,
+.cloud8 .bar,
+.cloud6 .circle,
+.cloud6 .bar {
+  background-color: #c4c3c3;
 }
