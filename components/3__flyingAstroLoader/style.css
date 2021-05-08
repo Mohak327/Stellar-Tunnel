@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
+@font-face {
+  font-family: 'Monument Extended';
+  src:  url('../../assets/MonumentExtended-Regular.otf') format('opentype');
+}
+
 body {
   /* background: linear-gradient(to bottom, #152037 0%, #222352 100%); */
   /* background: #152037; */
@@ -25,12 +30,20 @@ h1 {
   position: absolute;
   color: white;
   font-family: "Open Sans";
+
+  /* font-family: "Monument Extended"; */
   font-weight: 600;
   font-size: 12px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   top: 58%;
   transition: 0.3s ease all;
   margin-bottom: 50px;
+}
+
+h1 #count {
+  font-family: "Monument Extended";
+  font-size: 30px;
 }
 
 /*--------- Text and countdown ---------*/
