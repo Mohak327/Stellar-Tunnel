@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Muli&amp;display=swap);
+
+
 html, body {
   background: darkgrey;
   padding: 0;
@@ -68,7 +71,6 @@ html, body {
 }
 .astronaut__walking-anim {
   animation: walking-anim 1.3s steps(35) infinite;
-  /* animation-iteration-count: infinite; */
 }
 
 .planet {
@@ -135,7 +137,7 @@ html, body {
   left: 120px;
 }
 
-.base {
+.bar {
   width: 180px;
   height: 50px;
   background: #1f275b;
@@ -192,19 +194,18 @@ html, body {
 }
 
 .cloud2 .circle,
-.cloud2 .base,
+.cloud2 .bar,
 .cloud4 .circle,
-.cloud4 .base,
+.cloud4 .bar,
 .cloud8 .circle,
-.cloud8 .base,
+.cloud8 .bar,
 .cloud6 .circle,
-.cloud6 .base {
+.cloud6 .bar {
   background-color: #c4c3c3;
 }
 
 
 /* Button  */
-
 .pushable {
   z-index:100;
   position: relative;
@@ -256,6 +257,7 @@ html, body {
   border-radius: 12px;
   font-size: 1.25rem;
   color: white;
+  font-family: 'Muli';
   background: hsl(345deg 100% 47%);
   will-change: transform;
   transform: translateY(-4px);
